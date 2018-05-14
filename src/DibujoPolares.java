@@ -7,42 +7,43 @@ import java.lang.reflect.Method;
 
 public class DibujoPolares {
     private static Color devuelveRadianes(double radio, double angulo) {
-        //Método a modificar. radio y angulo están entre 0 y 1.
+        //MÃ©todo a modificar. radio y angulo estÃ¡n entre 0 y 1.
         //El radio vale 1 en las esquinas
         //El angulo empieza en la parte superior de la vertical y va en sentido antihorario
 
 
-        if (angulo <= 0.25 || angulo >= 0.75) {
+        if (angulo <= 0.25 || angulo >= -
+        		0.75) {
             if (radio < 0.1) {
-                return new Color(147, 147, 147);
+                return new Color(255,21,34);
 
             }
             if (radio > 0.1 && radio < 0.2) {
-                return new Color(136, 24, 246);
+                return new Color(255,21,54);
 
             }
             if (radio > 0.2 && radio < 0.3) {
-                return new Color(21, 22, 255);
+                return new Color(255,21,54);
 
             }
             if (radio > 0.3 && radio < 0.4) {
-                return new Color(118, 238, 255);
+                return new Color(255,255,255);
 
             }
             if (radio > 0.4 && radio < 0.5) {
-                return new Color(36, 255, 102);
+                return new Color(255,255,255);
 
             }
             if (radio > 0.5 && radio < 0.6) {
-                return new Color(253, 255, 57);
+                return new Color(255,255,255);
 
             }
             if (radio > 0.6 && radio < 0.7) {
-                return new Color(255, 135, 30);
+                return new Color(255,255,255);
 
             }
             if (radio > 0.7 && radio < 0.8) {
-                return new Color(255, 21, 34);
+                return new Color(255,255,255);
 
             }
 
@@ -51,7 +52,7 @@ public class DibujoPolares {
     }
 
 
-    //NO MODIFICAR A PARTIR DE AQUÍ
+    //NO MODIFICAR A PARTIR DE AQUÃ�
 
 
     public static int ANCHO = 400;
